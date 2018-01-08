@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import firebase from './firebase.js';
-//
+
 class App extends Component {
   constructor(){
     super();
@@ -46,6 +46,17 @@ handleSubmit(e){
 
   // alert("thank you!");
 }
+functionName() {
+  let imgArr = [];
+
+  for(let i = 0; i < 10; i++){
+    imgArr.push(i + 'png');
+  }
+
+  console.log(imgArr);
+}
+
+
   render() {
     return (
       <div className="app">
@@ -71,15 +82,27 @@ handleSubmit(e){
                 <input type="text" name="yourName" placeholder="What's your name?"
                   onChange={this.handleChange} value={this.state.yourName} />
               <button>Add Item</button>
+                <button type="button" className="btn btn-primary">Primary</button>
+
               </form>
           </section>
-          <section className='display-item'>
-            <div className='wrapper'>
-              <ul>
-              </ul>
+          <section className='row'>
+            <div className='col-xs-3'>
+              testing
+            </div>
+            <div className='col-xs-3'>
+          testing
+            </div>
+            <div className='col-xs-3'>
+          testing
+            </div>
+            <div className='col-xs-3'>
+          testing
             </div>
           </section>
         </div>
+
+
       </div>
     );
   }
