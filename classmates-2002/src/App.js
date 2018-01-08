@@ -1,15 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import firebase from './firebase.js';
 //
 class App extends Component {
-//   constructor(){
-//     super();
-//     this.state = {
-//       currentItem:
-//     }
-//   }
+  constructor(){
+    super();
+    this.state = {
+      classmateName: '',
+      contact: '',
+      email: '',
+      url: '',
+      moreInfo: '',
+      yourName: ''
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
+handleChange(e){
+  this.setState({
+    [e.target.name]: e.target.value
+  })
+}
+
+handleSubmit(e){
+  e.preventDefault();
+  let classmatesRef = firebase.database().ref('classmates');
+  let classmate = {
+    classmateName: this.state.classmateName,
+    contact: this.state.contact,
+    email: this.state.email,
+    url: this.state.url,
+    moreInfo: this.state.moreInfo,
+    yourName: this.state.yourName
+  }
+  classmatesRef.push(classmate);
+  this.setState({
+    classmateName: '',
+    contact: '',
+    email: '',
+    url: '',
+    moreInfo: '',
+    yourName: ''
+  })
+
+  // alert("thank you!");
+}
   render() {
     return (
       <div className="app">
@@ -21,13 +57,19 @@ class App extends Component {
         </header>
         <div className='container'>
           <section className='add-item'>
-              <form>
-                <input type="text" name="classmateName" placeholder="Classmates Name" />
-                <input type="phone" name="contact" placeholder="phone number" />
-                <input type="email" name="contactInfo" placeholder="email" />
-                <input type="url" name="url" placeholder="social media link" />
-                <input type="text" name="moreinfo" placeholder="Other info" />
-                <input type="text" name="yourName" placeholder="What's your name?" />
+              <form onSubmit={this.handleSubmit}>
+                <input type="text" name="classmateName" placeholder="Classmates Name"
+                  onChange={this.handleChange} value={this.state.classmateName} />
+                <input type="phone" name="contact" placeholder="phone number"
+                  onChange={this.handleChange} value={this.state.contact} />
+                <input type="email" name="email" placeholder="email"
+                  onChange={this.handleChange} value={this.state.email} />
+                <input type="url" name="url" placeholder="social media link"
+                  onChange={this.handleChange} value={this.state.url} />
+                <input type="text" name="moreInfo" placeholder="Other info"
+                  onChange={this.handleChange} value={this.state.moreInfo} />
+                <input type="text" name="yourName" placeholder="What's your name?"
+                  onChange={this.handleChange} value={this.state.yourName} />
               <button>Add Item</button>
               </form>
           </section>
