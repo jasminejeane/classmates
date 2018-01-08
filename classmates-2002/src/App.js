@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import firebase from './firebase.js';
 
+
 class App extends Component {
   constructor(){
     super();
@@ -67,7 +68,7 @@ functionName() {
             </div>
         </header>
         <div className='container'>
-          <section className='add-item'>
+          <section className='add-item col-xs-4'>
               <form onSubmit={this.handleSubmit}>
                 <input type="text" name="classmateName" placeholder="Classmates Name"
                   onChange={this.handleChange} value={this.state.classmateName} />
@@ -86,9 +87,9 @@ functionName() {
 
               </form>
           </section>
-          <section className='row'>
+          <section className='col-xs-8'>
             <div className='col-xs-3'>
-              testing
+              <img src="./images/brendabday.jpg"></img>
             </div>
             <div className='col-xs-3'>
           testing
