@@ -3,6 +3,7 @@ import './App.css';
 import firebase from './firebase.js';
 
 
+
 class App extends Component {
   constructor(){
     super();
@@ -16,6 +17,7 @@ class App extends Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
 handleChange(e){
@@ -45,21 +47,20 @@ handleSubmit(e){
     yourName: ''
   })
 
-  // alert("thank you!");
 }
-functionName() {
-  let imgArr = [];
-
-  for(let i = 0; i < 10; i++){
-    imgArr.push(i + 'png');
-  }
-
-  console.log(imgArr);
-}
-
 
   render() {
+    let element = '<section>';
+
+    for(var i = 1; i < 20; i++){
+
+      element += `<img alt='' src=./images/${i}.png>`
+    }
+
+    element += '</section>';
+
     return (
+
       <div className="app">
         <header>
             <div className='wrapper'>
@@ -87,9 +88,10 @@ functionName() {
 
               </form>
           </section>
+          {element}
           <section className='col-xs-8'>
             <div className='col-xs-3'>
-              <img src="./images/brendabday.jpg"></img>
+              <img src="./images/1.png"/>
             </div>
             <div className='col-xs-3'>
           testing
