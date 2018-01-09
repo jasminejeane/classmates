@@ -92,7 +92,7 @@ handleSubmit(e){
                   onChange={this.handleChange} value={this.state.moreInfo} />
                 <input className="input-item" type="text" name="yourName" placeholder="What's your name?"
                   onChange={this.handleChange} value={this.state.yourName} />
-                <button>Add Info</button>
+                <button>ADD INFO</button>
 
               </form>
           </section>
