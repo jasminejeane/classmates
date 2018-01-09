@@ -25,7 +25,7 @@ header h1 {
 header img{
 width: 180px;
 position: absolute;
-top: 20px;
+top: 15px;
 right: 20px;
 }
 
@@ -40,6 +40,9 @@ right: 20px;
   font-weight: bold;
 }
 
+a{
+  cursor: pointer;
+}
 section img{
   width: 160px;
   height: 175px;

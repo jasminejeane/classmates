@@ -20,6 +20,11 @@ class App extends Component {
 
   }
 
+
+populateName(e){
+  const nameInput = document.getElementsByClassName('.classmateName');
+  nameInput.value = e.target.value;
+}
 handleChange(e){
   this.setState({
     [e.target.name]: e.target.value
@@ -75,7 +80,7 @@ handleSubmit(e){
           </div>
           <section className='add-item col-xs-4'>
               <form onSubmit={this.handleSubmit}>
-                <input className="input-item" type="text" name="classmateName" placeholder="Classmates Name"
+                <input className="input-item classmateName" type="text" name="classmateName" placeholder="Classmates Name"
                   onChange={this.handleChange} value={this.state.classmateName} />
                 <input className="input-item" type="phone" name="contact" placeholder="phone number"
                   onChange={this.handleChange} value={this.state.contact} />
@@ -94,21 +99,29 @@ handleSubmit(e){
           <section className='col-xs-8'>
 
             <div className='col-xs-3 text-center'>
+          <a >
+          <img alt='Karina Aguilar' src='./images/1.png'/>
+          <p onClick={this.populateName} className='text-center'>Karina Aguilar</p>
+        </a>
+        </div><div className='col-xs-3 text-center'>
           <a>
-          <img alt='Daniel Alem' src='./images/1.png'/>
+          <img alt='Daniel Alem' src='./images/2.png'/>
           <p className='text-center'>Daniel Alem</p>
         </a>
         </div><div className='col-xs-3 text-center'>
           <a>
-          <img alt='Shavon Anderson' src='./images/2.png'/>
+          <img alt='Shavon Anderson' src='./images/3.png'/>
           <p className='text-center'>Shavon Anderson</p>
         </a>
-        </div><div className='col-xs-3 text-center'>
+        </div>
+        <div className='col-xs-3 text-center'>
           <a>
-          <img alt='Jodi Brodnax' src='./images/3.png'/>
+          <img alt='Jodi Brodnax' src='./images/4-4.png'/>
           <p className='text-center'>Jodi Brodnax</p>
         </a>
-        </div><div className='col-xs-3 text-center'>
+        </div>
+
+        <div className='col-xs-3 text-center'>
           <a>
           <img alt='Johnnie Brown' src='./images/4.png'/>
           <p className='text-center'>Johnnie Brown</p>
@@ -315,11 +328,6 @@ handleSubmit(e){
         </a>
         </div><div className='col-xs-3 text-center'>
           <a>
-          <img alt='--' src='./images/45.png'/>
-          <p className='text-center'>--</p>
-        </a>
-        </div><div className='col-xs-3 text-center'>
-          <a>
           <img alt='Kimhong Nguyen' src='./images/47.png'/>
           <p className='text-center'>Kimhong Nguyen</p>
         </a>
@@ -381,7 +389,7 @@ handleSubmit(e){
         </div><div className='col-xs-3 text-center'>
           <a>
           <img alt='Benjamin Rathbone-Webber' src='./images/59.png'/>
-          <p className='text-center'>Benjamin Rathbone-Webber</p>
+          <p className='text-center'>Benjamin Webber</p>
         </a>
         </div><div className='col-xs-3 text-center'>
           <a>
@@ -442,11 +450,6 @@ handleSubmit(e){
           <a>
           <img alt='Jose Vanez' src='./images/71.png'/>
           <p className='text-center'>Jose Vanez</p>
-        </a>
-        </div><div className='col-xs-3 text-center'>
-          <a>
-          <img alt='-- ' src='./images/72.png'/>
-          <p className='text-center'>-- </p>
         </a>
         </div><div className='col-xs-3 text-center'>
           <a>
