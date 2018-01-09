@@ -65,27 +65,27 @@ handleSubmit(e){
       <div className="app">
         <header>
             <div className='wrapper'>
-              <h1>Find Friends</h1>
+              <h1>Find our Classmates </h1>
+              <p>Oakland Tech Class of 2002</p>
 
             </div>
         </header>
         <div className='container'>
           <section className='add-item col-xs-4'>
               <form onSubmit={this.handleSubmit}>
-                <input type="text" name="classmateName" placeholder="Classmates Name"
+                <input className="input-item" type="text" name="classmateName" placeholder="Classmates Name"
                   onChange={this.handleChange} value={this.state.classmateName} />
-                <input type="phone" name="contact" placeholder="phone number"
+                <input className="input-item" type="phone" name="contact" placeholder="phone number"
                   onChange={this.handleChange} value={this.state.contact} />
-                <input type="email" name="email" placeholder="email"
+                <input className="input-item" type="email" name="email" placeholder="email"
                   onChange={this.handleChange} value={this.state.email} />
-                <input type="url" name="url" placeholder="social media link"
+                <input className="input-item" type="url" name="url" placeholder="social media link"
                   onChange={this.handleChange} value={this.state.url} />
-                <input type="text" name="moreInfo" placeholder="Other info"
+                <input className="input-item" type="text" name="moreInfo" placeholder="Other info"
                   onChange={this.handleChange} value={this.state.moreInfo} />
-                <input type="text" name="yourName" placeholder="What's your name?"
+                <input className="input-item" type="text" name="yourName" placeholder="What's your name?"
                   onChange={this.handleChange} value={this.state.yourName} />
-              <button>Add Item</button>
-                <button type="button" className="btn btn-primary">Primary</button>
+                <button>Add Info</button>
 
               </form>
           </section>
