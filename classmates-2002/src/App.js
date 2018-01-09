@@ -67,8 +67,9 @@ handleSubmit(e){
             <div className='wrapper'>
               <h1>Find our Classmates </h1>
               <p>Oakland Tech Class of 2002</p>
-
+              <img className="pull-right" src="./images/bulldog4.png"/>
             </div>
+
         </header>
         <div className='container outline'>
           <div className='note'>
