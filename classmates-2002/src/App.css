@@ -40,7 +40,14 @@ header i {
   margin-left: 12px;
 }
 
-.container {
+.note{
+  font-family: cursive;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+
+.container.outline {
   padding-top: 30px;
   margin-right: 25px;
   margin-left: 25px;

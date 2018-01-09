@@ -70,7 +70,16 @@ handleSubmit(e){
 
             </div>
         </header>
-        <div className='container'>
+        <div className='container outline'>
+          <div className='note'>
+          <p>Hello,</p>
+          <p>We can't find these classmates :(. May you help us?</p>
+
+          <p>If you happen to recognize a classmate here that you know how to get in touch with...
+            Please fill out the form below with their contact and your name
+            so we can be sure to include them in upcoming class of 2002 events.</p>
+
+          </div>
           <section className='add-item col-xs-4'>
               <form onSubmit={this.handleSubmit}>
                 <input className="input-item" type="text" name="classmateName" placeholder="Classmates Name"
