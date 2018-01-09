@@ -19,6 +19,12 @@ header h1 {
 
 }
 
+img{
+  width: 150px;
+  height: 175px;
+  margin-bottom: 45px;
+  border: 10px solid black;
+}
 .fa {
   font-size: 22px;
   transform: translateY(50deg);
