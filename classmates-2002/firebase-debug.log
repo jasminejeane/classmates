@@ -1,0 +1,18 @@
+[debug] [2018-01-09T03:14:16.235Z] ----------------------------------------------------------------------
+[debug] [2018-01-09T03:14:16.238Z] Command:       /Users/jasminejmartin/.nvm/versions/node/v8.1.4/bin/node /Users/jasminejmartin/.nvm/versions/node/v8.1.4/bin/firebase deploy
+[debug] [2018-01-09T03:14:16.238Z] CLI Version:   3.16.0
+[debug] [2018-01-09T03:14:16.238Z] Platform:      darwin
+[debug] [2018-01-09T03:14:16.238Z] Node Version:  v8.1.4
+[debug] [2018-01-09T03:14:16.241Z] Time:          Mon Jan 08 2018 19:14:16 GMT-0800 (PST)
+[debug] [2018-01-09T03:14:16.241Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-09T03:14:16.283Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-09T03:14:16.283Z] > authorizing via signed-in user
+[debug] [2018-01-09T03:14:16.286Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/classmates-deca7  
+  
+ Mon Jan 08 2018 19:14:16 GMT-0800 (PST)
+[debug] [2018-01-09T03:14:16.908Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-09T03:14:16.910Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/classmates-deca7/tokens  
+  
+ Mon Jan 08 2018 19:14:16 GMT-0800 (PST)
+[debug] [2018-01-09T03:15:12.826Z] <<< HTTP RESPONSE 200
