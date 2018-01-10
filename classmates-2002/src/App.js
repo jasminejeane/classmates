@@ -50,6 +50,7 @@ handleSubmit(e){
     yourName: ''
   })
 
+alert("Thank you!!!");
 }
 
   render() {
@@ -69,7 +70,7 @@ handleSubmit(e){
         <div className='outline'>
           <div className='note'>
           <p>Hello,</p>
-          <p>We can't find these classmates :(. May you help us?</p>
+          <p>We can't find these classmates :(. Help us?</p>
 
           <p>If you happen to recognize a classmate here that you know how to get in touch with...
             Please fill out the form below with their contact and your name
@@ -137,9 +138,6 @@ handleSubmit(e){
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Al David' src='./images/14.png'/>
                       <p className='text-center'>Al David</p>
-                    </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
-                      <img alt='Marivel Dominguez' src='./images/15.png'/>
-                      <p className='text-center'>Marivel Dominguez</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Quiana Ellis' src='./images/16.png'/>
                       <p className='text-center'>Quiana Ellis</p>
@@ -228,9 +226,6 @@ handleSubmit(e){
                       <img alt='Binh Nguyen' src='./images/44.png'/>
                       <p className='text-center'>Binh Nguyen</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
-                      <img alt='--' src='./images/45.png'/>
-                      <p className='text-center'>--</p>
-                    </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Kimhong Nguyen' src='./images/47.png'/>
                       <p className='text-center'>Kimhong Nguyen</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
@@ -271,7 +266,7 @@ handleSubmit(e){
                       <p className='text-center'>Benjamin Rathbone-Webber</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Esmeralda Sandoval' src='./images/60.png'/>
-                      <p className='text-center'>Esmeralda Sandoval</p>
+                      <p className='text-center esmeralda'>Esmeralda Sandoval</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Ivan Satterfield ' src='./images/61.png'/>
                       <p className='text-center'>Ivan Satterfield </p>
@@ -290,9 +285,6 @@ handleSubmit(e){
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Brisa Solano' src='./images/66.png'/>
                       <p className='text-center'>Brisa Solano</p>
-                    </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
-                      <img alt='Denny Tang' src='./images/67.png'/>
-                      <p className='text-center'>Denny Tang</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Eva Thomas' src='./images/68.png'/>
                       <p className='text-center'>Eva Thomas</p>
@@ -314,9 +306,6 @@ handleSubmit(e){
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Asha Washington' src='./images/75.png'/>
                       <p className='text-center'>Asha Washington</p>
-                    </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
-                      <img alt='Sarah Welch' src='./images/76.png'/>
-                      <p className='text-center'>Sarah Welch</p>
                     </div><div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Domonique Wilson' src='./images/77.png'/>
                       <p className='text-center'>Domonique Wilson</p>

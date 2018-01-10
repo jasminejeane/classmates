@@ -162,7 +162,7 @@ li p {
   background-color: #fff;
   border: none;
   border-radius: 6px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 45px 0px #ffff00e3;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
@@ -170,7 +170,7 @@ li p {
 
 form button:hover {
   background-color: #6e2978;
-  box-shadow: 0px 15px 20px #6e29787d;
+  box-shadow: 0px 8px 45px 0px #6e29787d;
   color: #fff;
   transform: translateY(-7px);
 }
@@ -195,7 +195,16 @@ form button:hover {
     width: 130px;
   }
 
+  .add-item{
+    padding: 20px 15px 25px 15px;
+  }
+  .note{
+    font-size: 18px;
+  }
   .col-xs-6 p{
     font-size: 12px;
+  }
+  p.esmeralda {
+    font-size: 10px;
   }
 }
