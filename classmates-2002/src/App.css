@@ -186,4 +186,16 @@ form button:hover {
     width: 140px;
     height: 155px;
   }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  header img {
+    width: 130px;
+  }
+
+  .col-xs-6 p{
+    font-size: 12px;
+  }
 }
