@@ -157,8 +157,8 @@ li p {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-weight: 500;
-  color: grey;
+  font-weight: bold;
+  color: #333333bd;
   background-color: #fff;
   border: none;
   border-radius: 6px;
@@ -174,16 +174,16 @@ form button:hover {
   color: #fff;
   transform: translateY(-7px);
 }
-/* form button {
-  width: 100%;
-  margin-top: 10px;
-  border-radius: 2px;
-  min-width: 88px;
-  background-color: #ffff009e;
-  cursor: pointer;
-  border: 2px solid #808080c7;
-  min-width: 120px;
-  color: grey;
-  font-size: 14px;
-  padding: 10px 6px;
-} */
+
+
+@media(max-width: 768px) {
+  input.input-item {
+
+    padding: 13px 12px;
+  }
+
+  section img {
+    width: 140px;
+    height: 155px;
+  }
+}

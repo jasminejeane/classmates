@@ -76,7 +76,7 @@ handleSubmit(e){
             so we can be sure to include them in upcoming class of 2002 events.</p>
 
           </div>
-          <section className='add-item col-xs-4'>
+          <section className='add-item col-xs-5 col-md-4'>
               <form onSubmit={this.handleSubmit}>
                 <input className="input-item classmateName" type="text" name="classmateName" placeholder="Classmates Name"
                   onChange={this.handleChange} value={this.state.classmateName} />
@@ -94,7 +94,7 @@ handleSubmit(e){
 
               </form>
           </section>
-          <section className='col-xs-8'>
+          <section className='col-xs-7 col-md-8'>
             <div className='col-xs-6 col-md-4 col-lg-3 text-center'>
                       <img alt='Karina Aguilar' src='./images/1.png'/>
                       <p className='text-center'>Karina Aguilar</p>
